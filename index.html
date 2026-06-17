@@ -2,11 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <title>Nayepankh - A dream standing for all</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-      // Configure Tailwind to use class-based dark mode
       tailwind.config = {
         darkMode: "class",
       };
@@ -22,6 +24,7 @@
     <style>
       body {
         font-family: "Inter", sans-serif;
+        -webkit-text-size-adjust: 100%; /* Prevents iOS text zoom */
       }
       .heading {
         font-family: "Cormorant Garamond", serif;
@@ -29,11 +32,11 @@
     </style>
   </head>
   <body
-    class="bg-[#F4F8F6] text-[#24332D] dark:bg-[#181A1B] dark:text-[#E0E4E2] transition-colors duration-300"
+    class="bg-[#F4F8F6] text-[#24332D] dark:bg-[#181A1B] dark:text-[#E0E4E2] transition-colors duration-300 overflow-x-hidden max-w-[100vw]"
   >
     <nav
       id="navbar"
-      class="fixed flex items-center justify-between top-0 w-full z-50 backdrop-blur-md bg-[#FFFFFF]/80 dark:bg-[#181A1B]/80 border-b border-[#E7ECE9] dark:border-[#333835] transition-all duration-300"
+      class="fixed flex items-center justify-between top-0 w-full z-50 backdrop-blur-md bg-[#FFFFFF]/90 dark:bg-[#181A1B]/90 border-b border-[#E7ECE9] dark:border-[#333835] transition-all duration-300"
     >
       <img
         src="img/images.jfif"
@@ -88,7 +91,7 @@
     </nav>
     <div
       id="mobile-menu"
-      class="hidden fixed top-20 md:top-32 left-0 w-full bg-[#FFFFFF] shadow-lg z-40 border-b border-[#E7ECE9] dark:bg-[#181A1B] dark:border-[#333835] transition-colors duration-300"
+      class="hidden fixed top-24 md:top-32 left-0 w-full bg-[#FFFFFF] shadow-lg z-40 border-b border-[#E7ECE9] dark:bg-[#181A1B] dark:border-[#333835] transition-colors duration-300"
     >
       <ul
         class="flex flex-col items-center py-6 gap-6 text-xl text-[#1F4D3C] dark:text-[#A3D8B4] font-medium"
@@ -103,9 +106,9 @@
 
     <section
       id="hero"
-      class="flex flex-col md:flex-row items-center min-h-screen pt-28 md:pt-40 text-center"
+      class="flex flex-col md:flex-row items-center min-h-[100dvh] pt-28 md:pt-40 pb-12 text-center"
     >
-      <div class="flex flex-col justify-center flex-1 p-6 md:p-12">
+      <div class="flex flex-col justify-center flex-1 px-6 md:p-12">
         <div class="py-3 text-[#1F4D3C] dark:text-[#A3D8B4]">
           <h1 class="text-4xl md:text-5xl font-bold my-1.5 heading">
             Giving Wings to Dreams,
@@ -135,7 +138,7 @@
           <h3>📍 Community Initiatives Across India</h3>
         </div>
         <div
-          class="flex flex-col sm:flex-row justify-center gap-4 md:gap-6 mt-6"
+          class="flex flex-col sm:flex-row justify-center gap-4 md:gap-6 mt-4"
         >
           <button
             id="donate"
@@ -153,10 +156,10 @@
       </div>
 
       <div
-        class="flex flex-1 items-center justify-center p-6 md:p-12 mb-12 md:mb-0"
+        class="flex flex-1 items-center justify-center px-6 md:p-12 mt-8 md:mt-0 mb-16 md:mb-0 w-full"
       >
         <div
-          class="w-[100%] h-[350px] md:h-[450px] border-2 border-transparent flex items-center justify-center rounded-4xl object-cover shadow-lg"
+          class="w-full max-w-lg md:max-w-none h-[250px] sm:h-[350px] md:h-[450px] border-2 border-transparent flex items-center justify-center rounded-4xl object-cover shadow-lg mx-auto"
         >
           <div class="relative w-full h-full">
             <img
@@ -165,7 +168,7 @@
               class="rounded-3xl w-full h-full object-cover"
             />
             <div
-              class="absolute left-1/2 -bottom-10 md:-bottom-12 -translate-x-1/2 text-center bg-[#FFFFFF] dark:bg-[#202322] border border-[#E7ECE9] dark:border-[#333835] px-4 md:px-6 py-2 rounded-2xl shadow-md text-[#1F4D3C] dark:text-[#A3D8B4] transition-colors duration-300 w-[80%] sm:w-auto"
+              class="absolute left-1/2 -bottom-10 md:-bottom-12 -translate-x-1/2 text-center bg-[#FFFFFF] dark:bg-[#202322] border border-[#E7ECE9] dark:border-[#333835] px-4 md:px-6 py-2 rounded-2xl shadow-md text-[#1F4D3C] dark:text-[#A3D8B4] transition-colors duration-300 w-[80%] sm:w-auto min-w-[200px]"
             >
               ❤️
               <h3 class="font-bold text-lg md:text-xl">2L+</h3>
@@ -358,12 +361,14 @@
 
     <section
       id="About-us"
-      class="flex flex-col md:flex-row items-center min-h-screen py-12 md:py-20 px-6 md:px-12 text-center md:text-left"
+      class="flex flex-col md:flex-row items-center min-h-[100dvh] py-12 md:py-20 px-6 md:px-12 text-center md:text-left"
     >
       <div
-        class="flex flex-1 items-center justify-center p-0 md:p-6 mb-8 md:mb-0"
+        class="flex flex-1 items-center justify-center p-0 md:p-6 mb-8 md:mb-0 w-full"
       >
-        <div class="relative w-full h-full max-w-[500px] md:max-w-none">
+        <div
+          class="relative w-full max-w-lg md:max-w-none h-[250px] sm:h-[350px] md:h-full"
+        >
           <img
             src="img/images (1).jfif"
             alt="Together"
@@ -372,7 +377,7 @@
         </div>
       </div>
 
-      <div class="flex flex-col justify-center flex-1 p-0 md:p-6">
+      <div class="flex flex-col justify-center flex-1 p-0 md:p-6 w-full">
         <div class="font-semibold text-[#55B985] mb-2">🌿 About NayePankh</div>
         <h1
           class="text-3xl md:text-4xl font-bold text-[#1F4D3C] dark:text-[#A3D8B4] heading"
@@ -437,42 +442,42 @@
       <div
         class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6 md:px-12 mt-8"
       >
-        <div class="relative">
+        <div class="relative w-full aspect-[4/3] sm:aspect-auto sm:h-64">
           <img
             src="img/images (2).jfif"
             alt="Gallery 1"
             class="rounded-3xl w-full h-full object-cover shadow-md hover:scale-[1.03] transition duration-300"
           />
         </div>
-        <div class="relative">
+        <div class="relative w-full aspect-[4/3] sm:aspect-auto sm:h-64">
           <img
             src="img/images (3).jfif"
             alt="Gallery 2"
             class="rounded-3xl w-full h-full object-cover shadow-md hover:scale-[1.03] transition duration-300"
           />
         </div>
-        <div class="relative">
+        <div class="relative w-full aspect-[4/3] sm:aspect-auto sm:h-64">
           <img
             src="img/images (4).jfif"
             alt="Gallery 3"
             class="rounded-3xl w-full h-full object-cover shadow-md hover:scale-[1.03] transition duration-300"
           />
         </div>
-        <div class="relative">
+        <div class="relative w-full aspect-[4/3] sm:aspect-auto sm:h-64">
           <img
             src="img/images (5).jfif"
             alt="Gallery 4"
             class="rounded-3xl w-full h-full object-cover shadow-md hover:scale-[1.03] transition duration-300"
           />
         </div>
-        <div class="relative">
+        <div class="relative w-full aspect-[4/3] sm:aspect-auto sm:h-64">
           <img
             src="img/images (6).jfif"
             alt="Gallery 5"
             class="rounded-3xl w-full h-full object-cover shadow-md hover:scale-[1.03] transition duration-300"
           />
         </div>
-        <div class="relative">
+        <div class="relative w-full aspect-[4/3] sm:aspect-auto sm:h-64">
           <img
             src="img/images (7).jfif"
             alt="Gallery 6"
@@ -496,12 +501,12 @@
       </p>
 
       <div
-        class="relative mt-8 max-w-4xl mx-auto border-4 border-[#FFFFFF] dark:border-[#202322] shadow-lg rounded-3xl overflow-hidden transition-colors duration-300"
+        class="relative mt-8 w-full max-w-4xl mx-auto border-4 border-[#FFFFFF] dark:border-[#202322] shadow-lg rounded-3xl overflow-hidden transition-colors duration-300"
       >
         <img
           src="img/media.jpg"
           alt="Media Coverage"
-          class="w-full h-full object-cover shadow-sm"
+          class="w-full h-auto object-cover shadow-sm"
         />
       </div>
 
@@ -624,8 +629,8 @@
         <div
           class="w-full md:w-1/2 bg-[#FFFFFF] dark:bg-[#202322] p-8 md:p-12 transition-colors duration-300"
         >
-          <form action="/submit-form" class="flex flex-col gap-4">
-            <div>
+          <form action="/submit-form" class="flex flex-col gap-4 w-full">
+            <div class="w-full">
               <label
                 class="block font-semibold text-[#1F4D3C] dark:text-[#A3D8B4] mb-1"
                 >Name:</label
@@ -634,10 +639,10 @@
                 type="text"
                 id="name"
                 placeholder="Enter Your name"
-                class="w-full bg-[#F4F8F6] dark:bg-[#181A1B] border border-[#E7ECE9] dark:border-[#333835] rounded-lg p-3 text-[#24332D] dark:text-[#E0E4E2] focus:outline-none focus:border-[#55B985] dark:focus:border-[#55B985] transition-colors duration-300"
+                class="w-full bg-[#F4F8F6] dark:bg-[#181A1B] border border-[#E7ECE9] dark:border-[#333835] rounded-lg p-3 text-[#24332D] dark:text-[#E0E4E2] focus:outline-none focus:border-[#55B985] dark:focus:border-[#55B985] transition-colors duration-300 box-border"
               />
             </div>
-            <div>
+            <div class="w-full">
               <label
                 class="block font-semibold text-[#1F4D3C] dark:text-[#A3D8B4] mb-1"
                 >Email:</label
@@ -646,10 +651,10 @@
                 type="email"
                 id="email"
                 placeholder="Enter Your Email"
-                class="w-full bg-[#F4F8F6] dark:bg-[#181A1B] border border-[#E7ECE9] dark:border-[#333835] rounded-lg p-3 text-[#24332D] dark:text-[#E0E4E2] focus:outline-none focus:border-[#55B985] dark:focus:border-[#55B985] transition-colors duration-300"
+                class="w-full bg-[#F4F8F6] dark:bg-[#181A1B] border border-[#E7ECE9] dark:border-[#333835] rounded-lg p-3 text-[#24332D] dark:text-[#E0E4E2] focus:outline-none focus:border-[#55B985] dark:focus:border-[#55B985] transition-colors duration-300 box-border"
               />
             </div>
-            <div>
+            <div class="w-full">
               <label
                 class="block font-semibold text-[#1F4D3C] dark:text-[#A3D8B4] mb-1"
                 >Message:</label
@@ -658,7 +663,7 @@
                 id="msg"
                 rows="4"
                 placeholder="Provide your message"
-                class="w-full bg-[#F4F8F6] dark:bg-[#181A1B] border border-[#E7ECE9] dark:border-[#333835] rounded-lg p-3 text-[#24332D] dark:text-[#E0E4E2] focus:outline-none focus:border-[#55B985] dark:focus:border-[#55B985] transition-colors duration-300"
+                class="w-full bg-[#F4F8F6] dark:bg-[#181A1B] border border-[#E7ECE9] dark:border-[#333835] rounded-lg p-3 text-[#24332D] dark:text-[#E0E4E2] focus:outline-none focus:border-[#55B985] dark:focus:border-[#55B985] transition-colors duration-300 box-border"
               ></textarea>
             </div>
             <button
@@ -672,7 +677,7 @@
     </section>
 
     <footer
-      class="bg-[#FFFFFF] dark:bg-[#202322] border-t-2 border-[#E7ECE9] dark:border-[#333835] mt-12 py-8 md:py-12 px-6 md:px-12 text-center flex flex-col items-center gap-4 transition-colors duration-300"
+      class="bg-[#FFFFFF] dark:bg-[#202322] border-t-2 border-[#E7ECE9] dark:border-[#333835] mt-12 py-8 md:py-12 px-6 md:px-12 text-center flex flex-col items-center gap-4 transition-colors duration-300 w-full"
     >
       <h3
         class="text-2xl md:text-3xl font-bold text-[#1F4D3C] dark:text-[#A3D8B4] heading"
