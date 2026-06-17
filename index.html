@@ -52,25 +52,37 @@
           class="hidden md:flex gap-6 text-2xl text-[#1F4D3C] dark:text-[#A3D8B4] font-medium"
         >
           <li>
-            <a href="#hero" class="hover:text-[#55B985] transition">Home</a>
+            <a
+              href="#hero"
+              class="hover:text-[#55B985] active:text-[#55B985] active:opacity-70 transition"
+              >Home</a
+            >
           </li>
           <li>
-            <a href="#About-us" class="hover:text-[#55B985] transition"
+            <a
+              href="#About-us"
+              class="hover:text-[#55B985] active:text-[#55B985] active:opacity-70 transition"
               >About</a
             >
           </li>
           <li>
-            <a href="#gallery" class="hover:text-[#55B985] transition"
+            <a
+              href="#gallery"
+              class="hover:text-[#55B985] active:text-[#55B985] active:opacity-70 transition"
               >Gallery</a
             >
           </li>
           <li>
-            <a href="#contact" class="hover:text-[#55B985] transition"
+            <a
+              href="#contact"
+              class="hover:text-[#55B985] active:text-[#55B985] active:opacity-70 transition"
               >Contact</a
             >
           </li>
           <li>
-            <a href="#involve" class="hover:text-[#55B985] transition"
+            <a
+              href="#involve"
+              class="hover:text-[#55B985] active:text-[#55B985] active:opacity-70 transition"
               >Donate</a
             >
           </li>
@@ -78,7 +90,7 @@
         <button
           id="theme-toggle"
           aria-label="Toggle Dark Mode"
-          class="text-2xl text-[#1F4D3C] dark:text-[#A3D8B4] hover:text-[#55B985] dark:hover:text-[#55B985] transition"
+          class="text-2xl text-[#1F4D3C] dark:text-[#A3D8B4] hover:text-[#55B985] dark:hover:text-[#55B985] active:scale-90 transition"
         >
           <i class="fa-solid fa-moon dark:opacity-0 dark:absolute"></i>
           <i
@@ -87,7 +99,7 @@
         </button>
         <button
           id="menu-btn"
-          class="md:hidden text-3xl text-[#1F4D3C] dark:text-[#A3D8B4]"
+          class="md:hidden text-3xl text-[#1F4D3C] dark:text-[#A3D8B4] active:scale-90 transition"
         >
           ☰
         </button>
@@ -101,11 +113,41 @@
       <ul
         class="flex flex-col items-center py-6 gap-6 text-xl text-[#1F4D3C] dark:text-[#A3D8B4] font-medium"
       >
-        <li><a href="#hero" class="hover:text-[#55B985]">Home</a></li>
-        <li><a href="#About-us" class="hover:text-[#55B985]">About</a></li>
-        <li><a href="#gallery" class="hover:text-[#55B985]">Gallery</a></li>
-        <li><a href="#contact" class="hover:text-[#55B985]">Contact</a></li>
-        <li><a href="#involve" class="hover:text-[#55B985]">Donate</a></li>
+        <li>
+          <a
+            href="#hero"
+            class="hover:text-[#55B985] active:text-[#55B985] active:opacity-70"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="#About-us"
+            class="hover:text-[#55B985] active:text-[#55B985] active:opacity-70"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            href="#gallery"
+            class="hover:text-[#55B985] active:text-[#55B985] active:opacity-70"
+            >Gallery</a
+          >
+        </li>
+        <li>
+          <a
+            href="#contact"
+            class="hover:text-[#55B985] active:text-[#55B985] active:opacity-70"
+            >Contact</a
+          >
+        </li>
+        <li>
+          <a
+            href="#involve"
+            class="hover:text-[#55B985] active:text-[#55B985] active:opacity-70"
+            >Donate</a
+          >
+        </li>
       </ul>
     </div>
 
@@ -145,18 +187,20 @@
         <div
           class="flex flex-col sm:flex-row justify-center gap-4 md:gap-6 mt-4"
         >
-          <button
+          <a
+            href="#contact"
             id="donate"
-            class="bg-[#55B985] text-[#FFFFFF] px-5 py-3 border-2 border-[#55B985] font-semibold rounded-xl hover:bg-[#1F4D3C] hover:border-[#1F4D3C] dark:hover:bg-[#A3D8B4] dark:hover:border-[#A3D8B4] dark:hover:text-[#181A1B] transition duration-200"
+            class="inline-block bg-[#55B985] text-[#FFFFFF] px-5 py-3 border-2 border-[#55B985] font-semibold rounded-xl hover:bg-[#1F4D3C] hover:border-[#1F4D3C] active:scale-95 active:bg-[#1F4D3C] dark:hover:bg-[#A3D8B4] dark:hover:border-[#A3D8B4] dark:hover:text-[#181A1B] dark:active:bg-[#A3D8B4] transition duration-200"
           >
-            <a href="#contact">Donate Now</a>
-          </button>
-          <button
+            Donate Now
+          </a>
+          <a
+            href="#involve"
             id="join"
-            class="bg-transparent text-[#55B985] px-5 py-3 border-2 border-[#55B985] font-semibold rounded-xl hover:bg-[#1F4D3C] hover:text-[#FFFFFF] hover:border-[#1F4D3C] dark:hover:bg-[#A3D8B4] dark:hover:text-[#181A1B] dark:hover:border-[#A3D8B4] transition duration-200"
+            class="inline-block bg-transparent text-[#55B985] px-5 py-3 border-2 border-[#55B985] font-semibold rounded-xl hover:bg-[#1F4D3C] hover:text-[#FFFFFF] hover:border-[#1F4D3C] active:scale-95 active:bg-[#1F4D3C] active:text-[#FFFFFF] dark:hover:bg-[#A3D8B4] dark:hover:text-[#181A1B] dark:hover:border-[#A3D8B4] dark:active:bg-[#A3D8B4] transition duration-200"
           >
-            <a href="#involve">Join Us</a>
-          </button>
+            Join Us
+          </a>
         </div>
       </div>
 
@@ -281,7 +325,7 @@
             children.
           </p>
           <button
-            class="mt-6 font-semibold text-[#55B985] hover:text-[#F7B955] transition"
+            class="mt-6 font-semibold text-[#55B985] hover:text-[#F7B955] active:scale-95 active:opacity-70 transition duration-200"
           >
             Learn More →
           </button>
@@ -298,7 +342,7 @@
             Ensuring nutritious meals reach underserved communities.
           </p>
           <button
-            class="mt-6 font-semibold text-[#55B985] hover:text-[#F7B955] transition"
+            class="mt-6 font-semibold text-[#55B985] hover:text-[#F7B955] active:scale-95 active:opacity-70 transition duration-200"
           >
             Learn More →
           </button>
@@ -315,7 +359,7 @@
             Organizing health camps and spreading awareness.
           </p>
           <button
-            class="mt-6 font-semibold text-[#55B985] hover:text-[#F7B955] transition"
+            class="mt-6 font-semibold text-[#55B985] hover:text-[#F7B955] active:scale-95 active:opacity-70 transition duration-200"
           >
             Learn More →
           </button>
@@ -332,7 +376,7 @@
             Providing essential clothing and winter necessities.
           </p>
           <button
-            class="mt-6 font-semibold text-[#55B985] hover:text-[#F7B955] transition"
+            class="mt-6 font-semibold text-[#55B985] hover:text-[#F7B955] active:scale-95 active:opacity-70 transition duration-200"
           >
             Learn More →
           </button>
@@ -349,7 +393,7 @@
             Building sustainable initiatives that empower communities.
           </p>
           <button
-            class="mt-6 font-semibold text-[#55B985] hover:text-[#F7B955] transition"
+            class="mt-6 font-semibold text-[#55B985] hover:text-[#F7B955] active:scale-95 active:opacity-70 transition duration-200"
           >
             Learn More →
           </button>
@@ -413,7 +457,7 @@
           </div>
         </div>
         <button
-          class="mt-8 mx-auto md:mx-0 font-semibold text-[#FFFFFF] bg-[#55B985] w-fit px-6 py-3 rounded-xl hover:bg-[#1F4D3C] dark:hover:bg-[#A3D8B4] dark:hover:text-[#181A1B] transition duration-200"
+          class="mt-8 mx-auto md:mx-0 font-semibold text-[#FFFFFF] bg-[#55B985] w-fit px-6 py-3 rounded-xl hover:bg-[#1F4D3C] active:scale-95 active:bg-[#1F4D3C] dark:hover:bg-[#A3D8B4] dark:hover:text-[#181A1B] dark:active:bg-[#A3D8B4] transition duration-200"
         >
           Know More →
         </button>
@@ -532,59 +576,65 @@
         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
       >
         <div
-          class="bg-[#F4F8F6] dark:bg-[#202322] border border-[#E7ECE9] dark:border-[#333835] rounded-3xl p-6 md:p-8 text-center shadow-sm hover:-translate-y-2 hover:shadow-md transition duration-300"
+          class="bg-[#F4F8F6] dark:bg-[#202322] border border-[#E7ECE9] dark:border-[#333835] rounded-3xl p-6 md:p-8 text-center shadow-sm hover:-translate-y-2 hover:shadow-md transition duration-300 flex flex-col justify-between"
         >
-          <div class="text-3xl md:text-4xl text-[#55B985] font-bold">
-            💝 Donate
-          </div>
-          <p
-            class="text-base md:text-lg mt-4 text-[#24332D] dark:text-[#E0E4E2]"
-          >
-            Support our initiatives and help us reach more communities in need.
-          </p>
-          <button
-            class="mt-6 w-full sm:w-auto font-semibold bg-[#F7B955] text-[#FFFFFF] dark:text-[#181A1B] px-6 py-3 rounded-xl hover:bg-[#1F4D3C] dark:hover:bg-[#A3D8B4] transition"
-          >
-            <a href="#contact">Donate Now</a>
-          </button>
-        </div>
-        <div
-          class="bg-[#F4F8F6] dark:bg-[#202322] border border-[#E7ECE9] dark:border-[#333835] rounded-3xl p-6 md:p-8 text-center shadow-sm hover:-translate-y-2 hover:shadow-md transition duration-300"
-        >
-          <div class="text-3xl md:text-4xl text-[#55B985] font-bold">
-            🤝 Volunteer
-          </div>
-          <p
-            class="text-base md:text-lg mt-4 text-[#24332D] dark:text-[#E0E4E2]"
-          >
-            Join our passionate team and contribute your time and skills.
-          </p>
-          <button
-            class="mt-6 w-full sm:w-auto font-semibold bg-[#55B985] text-[#FFFFFF] dark:text-[#181A1B] px-6 py-3 rounded-xl hover:bg-[#1F4D3C] dark:hover:bg-[#A3D8B4] transition"
-          >
-            <a href="#involve">Join Us</a>
-          </button>
-        </div>
-        <div
-          class="bg-[#F4F8F6] dark:bg-[#202322] border border-[#E7ECE9] dark:border-[#333835] rounded-3xl p-6 md:p-8 text-center shadow-sm hover:-translate-y-2 hover:shadow-md transition duration-300"
-        >
-          <div class="text-3xl md:text-4xl text-[#55B985] font-bold">
-            💻 Intern
-          </div>
-          <p
-            class="text-base md:text-lg mt-4 text-[#24332D] dark:text-[#E0E4E2]"
-          >
-            Gain experience while making a meaningful social impact.
-          </p>
-          <button
-            class="mt-6 w-full sm:w-auto font-semibold border-2 border-[#55B985] text-[#55B985] px-6 py-3 rounded-xl hover:bg-[#55B985] hover:text-[#FFFFFF] dark:hover:text-[#181A1B] transition"
-          >
-            <a
-              href="mailto:contact@nayepankh.com?subject=Internship Application"
+          <div>
+            <div class="text-3xl md:text-4xl text-[#55B985] font-bold">
+              💝 Donate
+            </div>
+            <p
+              class="text-base md:text-lg mt-4 text-[#24332D] dark:text-[#E0E4E2]"
             >
-              Apply Now
-            </a>
-          </button>
+              Support our initiatives and help us reach more communities in
+              need.
+            </p>
+          </div>
+          <a
+            href="#contact"
+            class="inline-block mt-6 w-full sm:w-auto font-semibold bg-[#F7B955] text-[#FFFFFF] dark:text-[#181A1B] px-6 py-3 rounded-xl hover:bg-[#1F4D3C] active:scale-95 active:bg-[#1F4D3C] dark:hover:bg-[#A3D8B4] dark:active:bg-[#A3D8B4] transition duration-200 text-center"
+          >
+            Donate Now
+          </a>
+        </div>
+        <div
+          class="bg-[#F4F8F6] dark:bg-[#202322] border border-[#E7ECE9] dark:border-[#333835] rounded-3xl p-6 md:p-8 text-center shadow-sm hover:-translate-y-2 hover:shadow-md transition duration-300 flex flex-col justify-between"
+        >
+          <div>
+            <div class="text-3xl md:text-4xl text-[#55B985] font-bold">
+              🤝 Volunteer
+            </div>
+            <p
+              class="text-base md:text-lg mt-4 text-[#24332D] dark:text-[#E0E4E2]"
+            >
+              Join our passionate team and contribute your time and skills.
+            </p>
+          </div>
+          <a
+            href="#involve"
+            class="inline-block mt-6 w-full sm:w-auto font-semibold bg-[#55B985] text-[#FFFFFF] dark:text-[#181A1B] px-6 py-3 rounded-xl hover:bg-[#1F4D3C] active:scale-95 active:bg-[#1F4D3C] dark:hover:bg-[#A3D8B4] dark:active:bg-[#A3D8B4] transition duration-200 text-center"
+          >
+            Join Us
+          </a>
+        </div>
+        <div
+          class="bg-[#F4F8F6] dark:bg-[#202322] border border-[#E7ECE9] dark:border-[#333835] rounded-3xl p-6 md:p-8 text-center shadow-sm hover:-translate-y-2 hover:shadow-md transition duration-300 flex flex-col justify-between"
+        >
+          <div>
+            <div class="text-3xl md:text-4xl text-[#55B985] font-bold">
+              💻 Intern
+            </div>
+            <p
+              class="text-base md:text-lg mt-4 text-[#24332D] dark:text-[#E0E4E2]"
+            >
+              Gain experience while making a meaningful social impact.
+            </p>
+          </div>
+          <a
+            href="mailto:contact@nayepankh.com?subject=Internship Application"
+            class="inline-block mt-6 w-full sm:w-auto font-semibold border-2 border-[#55B985] text-[#55B985] px-6 py-3 rounded-xl hover:bg-[#55B985] hover:text-[#FFFFFF] active:scale-95 active:bg-[#55B985] active:text-[#FFFFFF] dark:hover:text-[#181A1B] dark:active:text-[#181A1B] transition duration-200 text-center"
+          >
+            Apply Now
+          </a>
         </div>
       </div>
     </section>
@@ -660,7 +710,7 @@
               ></textarea>
             </div>
             <button
-              class="bg-[#55B985] text-[#FFFFFF] dark:text-[#181A1B] font-semibold py-3 px-6 rounded-xl mt-4 hover:bg-[#1F4D3C] dark:hover:bg-[#A3D8B4] transition duration-200"
+              class="bg-[#55B985] text-[#FFFFFF] dark:text-[#181A1B] font-semibold py-3 px-6 rounded-xl mt-4 hover:bg-[#1F4D3C] active:scale-95 active:bg-[#1F4D3C] dark:hover:bg-[#A3D8B4] dark:active:bg-[#A3D8B4] transition duration-200"
             >
               Send Message ->
             </button>
@@ -685,27 +735,27 @@
       <div class="flex gap-6 mt-4 font-semibold text-lg md:text-base">
         <a
           href="https://www.instagram.com/nayepankhfoundation/"
-          class="text-[#55B985] hover:text-[#F7B955] transition"
+          class="text-[#55B985] hover:text-[#F7B955] active:scale-90 transition"
           ><i class="fa-brands fa-instagram"></i
         ></a>
         <a
           href="https://www.facebook.com/nayepankhfoundation"
-          class="text-[#55B985] hover:text-[#F7B955] transition"
+          class="text-[#55B985] hover:text-[#F7B955] active:scale-90 transition"
           ><i class="fa-brands fa-facebook-f"></i
         ></a>
         <a
           href="https://www.linkedin.com/company/nayepankh"
-          class="text-[#55B985] hover:text-[#F7B955] transition"
+          class="text-[#55B985] hover:text-[#F7B955] active:scale-90 transition"
           ><i class="fa-brands fa-linkedin-in"></i
         ></a>
         <a
           href="https://www.youtube.com/@nayepankhfoundation"
-          class="text-[#55B985] hover:text-[#F7B955] transition"
+          class="text-[#55B985] hover:text-[#F7B955] active:scale-90 transition"
           ><i class="fa-brands fa-youtube"></i
         ></a>
         <a
           href="https://x.com/nayepankh"
-          class="text-[#55B985] hover:text-[#F7B955] transition"
+          class="text-[#55B985] hover:text-[#F7B955] active:scale-90 transition"
           ><i class="fa-brands fa-x-twitter"></i
         ></a>
       </div>
