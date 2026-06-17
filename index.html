@@ -80,8 +80,10 @@
           aria-label="Toggle Dark Mode"
           class="text-2xl text-[#1F4D3C] dark:text-[#A3D8B4] hover:text-[#55B985] dark:hover:text-[#55B985] transition"
         >
-          <i class="fa-solid fa-moon dark:hidden"></i>
-          <i class="fa-solid fa-sun hidden dark:block"></i>
+          <i class="fa-solid fa-moon dark:opacity-0 dark:absolute"></i>
+          <i
+            class="fa-solid fa-sun opacity-0 absolute dark:opacity-100 dark:static"
+          ></i>
         </button>
         <button
           id="menu-btn"
@@ -147,13 +149,13 @@
             id="donate"
             class="bg-[#55B985] text-[#FFFFFF] px-5 py-3 border-2 border-[#55B985] font-semibold rounded-xl hover:bg-[#1F4D3C] hover:border-[#1F4D3C] dark:hover:bg-[#A3D8B4] dark:hover:border-[#A3D8B4] dark:hover:text-[#181A1B] transition duration-200"
           >
-            Donate Now
+            <a href="#contact">Donate Now</a>
           </button>
           <button
             id="join"
             class="bg-transparent text-[#55B985] px-5 py-3 border-2 border-[#55B985] font-semibold rounded-xl hover:bg-[#1F4D3C] hover:text-[#FFFFFF] hover:border-[#1F4D3C] dark:hover:bg-[#A3D8B4] dark:hover:text-[#181A1B] dark:hover:border-[#A3D8B4] transition duration-200"
           >
-            Join Us
+            <a href="#involve">Join Us</a>
           </button>
         </div>
       </div>
@@ -543,7 +545,7 @@
           <button
             class="mt-6 w-full sm:w-auto font-semibold bg-[#F7B955] text-[#FFFFFF] dark:text-[#181A1B] px-6 py-3 rounded-xl hover:bg-[#1F4D3C] dark:hover:bg-[#A3D8B4] transition"
           >
-            Donate Now
+            <a href="#contact">Donate Now</a>
           </button>
         </div>
         <div
@@ -560,7 +562,7 @@
           <button
             class="mt-6 w-full sm:w-auto font-semibold bg-[#55B985] text-[#FFFFFF] dark:text-[#181A1B] px-6 py-3 rounded-xl hover:bg-[#1F4D3C] dark:hover:bg-[#A3D8B4] transition"
           >
-            Join Us
+            <a href="#involve">Join Us</a>
           </button>
         </div>
         <div
@@ -577,7 +579,11 @@
           <button
             class="mt-6 w-full sm:w-auto font-semibold border-2 border-[#55B985] text-[#55B985] px-6 py-3 rounded-xl hover:bg-[#55B985] hover:text-[#FFFFFF] dark:hover:text-[#181A1B] transition"
           >
-            Apply Now
+            <a
+              href="mailto:contact@nayepankh.com?subject=Internship Application"
+            >
+              Apply Now
+            </a>
           </button>
         </div>
       </div>
