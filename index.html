@@ -1,0 +1,724 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nayepankh - A dream standing for all</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Configure Tailwind to use class-based dark mode
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .heading {
+        font-family: "Cormorant Garamond", serif;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-[#F4F8F6] text-[#24332D] dark:bg-[#181A1B] dark:text-[#E0E4E2] transition-colors duration-300"
+  >
+    <nav
+      id="navbar"
+      class="fixed flex items-center justify-between top-0 w-full z-50 backdrop-blur-md bg-[#FFFFFF]/80 dark:bg-[#181A1B]/80 border-b border-[#E7ECE9] dark:border-[#333835] transition-all duration-300"
+    >
+      <img
+        src="img/images.jfif"
+        alt="Nayepankh Foundation"
+        class="h-20 w-20 md:h-32 md:w-32 object-cover rounded-2xl p-2 ml-2 md:ml-0"
+      />
+      <div
+        class="flex flex-1 justify-end items-center mr-6 md:mr-10 gap-4 md:gap-6"
+      >
+        <ol
+          class="hidden md:flex gap-6 text-2xl text-[#1F4D3C] dark:text-[#A3D8B4] font-medium"
+        >
+          <li>
+            <a href="#hero" class="hover:text-[#55B985] transition">Home</a>
+          </li>
+          <li>
+            <a href="#About-us" class="hover:text-[#55B985] transition"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="#gallery" class="hover:text-[#55B985] transition"
+              >Gallery</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-[#55B985] transition"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a href="#involve" class="hover:text-[#55B985] transition"
+              >Donate</a
+            >
+          </li>
+        </ol>
+        <button
+          id="theme-toggle"
+          aria-label="Toggle Dark Mode"
+          class="text-2xl text-[#1F4D3C] dark:text-[#A3D8B4] hover:text-[#55B985] dark:hover:text-[#55B985] transition"
+        >
+          <i class="fa-solid fa-moon dark:hidden"></i>
+          <i class="fa-solid fa-sun hidden dark:block"></i>
+        </button>
+        <button
+          id="menu-btn"
+          class="md:hidden text-3xl text-[#1F4D3C] dark:text-[#A3D8B4]"
+        >
+          ☰
+        </button>
+      </div>
+    </nav>
+    <div
+      id="mobile-menu"
+      class="hidden fixed top-20 md:top-32 left-0 w-full bg-[#FFFFFF] shadow-lg z-40 border-b border-[#E7ECE9] dark:bg-[#181A1B] dark:border-[#333835] transition-colors duration-300"
+    >
+      <ul
+        class="flex flex-col items-center py-6 gap-6 text-xl text-[#1F4D3C] dark:text-[#A3D8B4] font-medium"
+      >
+        <li><a href="#hero" class="hover:text-[#55B985]">Home</a></li>
+        <li><a href="#About-us" class="hover:text-[#55B985]">About</a></li>
+        <li><a href="#gallery" class="hover:text-[#55B985]">Gallery</a></li>
+        <li><a href="#contact" class="hover:text-[#55B985]">Contact</a></li>
+        <li><a href="#involve" class="hover:text-[#55B985]">Donate</a></li>
+      </ul>
+    </div>
+
+    <section
+      id="hero"
+      class="flex flex-col md:flex-row items-center min-h-screen pt-28 md:pt-40 text-center"
+    >
+      <div class="flex flex-col justify-center flex-1 p-6 md:p-12">
+        <div class="py-3 text-[#1F4D3C] dark:text-[#A3D8B4]">
+          <h1 class="text-4xl md:text-5xl font-bold my-1.5 heading">
+            Giving Wings to Dreams,
+          </h1>
+          <h1 class="text-4xl md:text-5xl font-bold my-1.5 heading">
+            Transforming Lives
+          </h1>
+          <p
+            class="font-semibold text-lg md:text-xl my-1 text-[#24332D] dark:text-[#E0E4E2]"
+          >
+            🌿 Education • Compassion • Community
+          </p>
+          <p
+            class="font-semibold text-lg md:text-xl my-1 text-[#24332D] dark:text-[#E0E4E2]"
+          >
+            ❤️ 2 Lakh+ Lives Touched Across India
+          </p>
+        </div>
+        <p class="text-[#24332D] dark:text-[#E0E4E2]">
+          Every child deserves the chance to dream, learn, and thrive. At
+          NayePankh, we work with communities to turn hope into opportunity and
+          compassion into action.
+        </p>
+        <div class="p-4 grid gap-1.5 text-[#1F4D3C] dark:text-[#A3D8B4]">
+          <h3>❤️ 2 Lakh+ Lives Touched</h3>
+          <h3>🤝 500+ Volunteers</h3>
+          <h3>📍 Community Initiatives Across India</h3>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row justify-center gap-4 md:gap-6 mt-6"
+        >
+          <button
+            id="donate"
+            class="bg-[#55B985] text-[#FFFFFF] px-5 py-3 border-2 border-[#55B985] font-semibold rounded-xl hover:bg-[#1F4D3C] hover:border-[#1F4D3C] dark:hover:bg-[#A3D8B4] dark:hover:border-[#A3D8B4] dark:hover:text-[#181A1B] transition duration-200"
+          >
+            Donate Now
+          </button>
+          <button
+            id="join"
+            class="bg-transparent text-[#55B985] px-5 py-3 border-2 border-[#55B985] font-semibold rounded-xl hover:bg-[#1F4D3C] hover:text-[#FFFFFF] hover:border-[#1F4D3C] dark:hover:bg-[#A3D8B4] dark:hover:text-[#181A1B] dark:hover:border-[#A3D8B4] transition duration-200"
+          >
+            Join Us
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-1 items-center justify-center p-6 md:p-12 mb-12 md:mb-0"
+      >
+        <div
+          class="w-[100%] h-[350px] md:h-[450px] border-2 border-transparent flex items-center justify-center rounded-4xl object-cover shadow-lg"
+        >
+          <div class="relative w-full h-full">
+            <img
+              src="img/np.avif"
+              alt="Together"
+              class="rounded-3xl w-full h-full object-cover"
+            />
+            <div
+              class="absolute left-1/2 -bottom-10 md:-bottom-12 -translate-x-1/2 text-center bg-[#FFFFFF] dark:bg-[#202322] border border-[#E7ECE9] dark:border-[#333835] px-4 md:px-6 py-2 rounded-2xl shadow-md text-[#1F4D3C] dark:text-[#A3D8B4] transition-colors duration-300 w-[80%] sm:w-auto"
+            >
+              ❤️
+              <h3 class="font-bold text-lg md:text-xl">2L+</h3>
+              <p class="text-xs md:text-sm font-semibold">Lives Impacted</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Impact-Stats" class="px-6 md:px-12 py-12 md:py-16">
+      <h1
+        class="font-bold text-3xl md:text-4xl text-[#1F4D3C] dark:text-[#A3D8B4] heading text-center"
+      >
+        Our Impact in Numbers
+      </h1>
+      <p
+        class="font-semibold text-base md:text-lg text-center mt-2 mb-10 text-[#24332D] dark:text-[#E0E4E2]"
+      >
+        Together, we are creating opportunities, spreading hope, and
+        transforming lives across communities.
+      </p>
+      <div
+        id="card-holder"
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+      >
+        <div
+          class="bg-[#FFFFFF] dark:bg-[#202322] border border-[#E7ECE9] dark:border-[#333835] rounded-3xl p-6 md:p-8 text-center shadow-sm hover:-translate-y-2 hover:shadow-md transition duration-300"
+        >
+          <div class="text-3xl md:text-4xl">❤️</div>
+          <h2
+            class="text-3xl md:text-4xl font-bold mt-4 text-[#1F4D3C] dark:text-[#A3D8B4]"
+          >
+            2L+
+          </h2>
+          <p class="mt-2 text-[#24332D] dark:text-[#E0E4E2]">Lives Impacted</p>
+        </div>
+
+        <div
+          class="bg-[#FFFFFF] dark:bg-[#202322] border border-[#E7ECE9] dark:border-[#333835] rounded-3xl p-6 md:p-8 text-center shadow-sm hover:-translate-y-2 hover:shadow-md transition duration-300"
+        >
+          <div class="text-3xl md:text-4xl">🤝</div>
+          <h2
+            class="text-3xl md:text-4xl font-bold mt-4 text-[#1F4D3C] dark:text-[#A3D8B4]"
+          >
+            500+
+          </h2>
+          <p class="mt-2 text-[#24332D] dark:text-[#E0E4E2]">Volunteers</p>
+        </div>
+
+        <div
+          class="bg-[#FFFFFF] dark:bg-[#202322] border border-[#E7ECE9] dark:border-[#333835] rounded-3xl p-6 md:p-8 text-center shadow-sm hover:-translate-y-2 hover:shadow-md transition duration-300"
+        >
+          <div class="text-3xl md:text-4xl">📚</div>
+          <h2
+            class="text-3xl md:text-4xl font-bold mt-4 text-[#1F4D3C] dark:text-[#A3D8B4]"
+          >
+            20+
+          </h2>
+          <p class="mt-2 text-[#24332D] dark:text-[#E0E4E2]">
+            Community Initiatives
+          </p>
+        </div>
+
+        <div
+          class="bg-[#FFFFFF] dark:bg-[#202322] border border-[#E7ECE9] dark:border-[#333835] rounded-3xl p-6 md:p-8 text-center shadow-sm hover:-translate-y-2 hover:shadow-md transition duration-300"
+        >
+          <div class="text-3xl md:text-4xl">📍</div>
+          <h2
+            class="text-3xl md:text-4xl font-bold mt-4 text-[#1F4D3C] dark:text-[#A3D8B4]"
+          >
+            10+
+          </h2>
+          <p class="mt-2 text-[#24332D] dark:text-[#E0E4E2]">Cities Reached</p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="initiatives"
+      class="px-6 md:px-12 py-12 md:py-16 bg-[#FFFFFF] dark:bg-[#181A1B] transition-colors duration-300"
+    >
+      <h1
+        class="text-3xl md:text-4xl font-bold text-[#1F4D3C] dark:text-[#A3D8B4] heading text-center"
+      >
+        Our Initiatives
+      </h1>
+      <p
+        class="text-base md:text-lg font-semibold text-center mt-2 text-[#24332D] dark:text-[#E0E4E2]"
+      >
+        Creating meaningful change through education, healthcare, and
+        community-driven programs.
+      </p>
+      <div
+        id="card-holder2"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-12 md:mt-16"
+      >
+        <div
+          class="border border-[#E7ECE9] dark:border-[#333835] bg-[#F4F8F6] dark:bg-[#202322] rounded-3xl p-6 md:p-8 text-center transition-colors duration-300"
+        >
+          <h2
+            class="text-2xl md:text-3xl font-bold mt-4 text-[#1F4D3C] dark:text-[#A3D8B4]"
+          >
+            📚 Education Drives
+          </h2>
+          <p class="mt-2 text-[#24332D] dark:text-[#E0E4E2]">
+            Providing learning opportunities and educational support to
+            children.
+          </p>
+          <button
+            class="mt-6 font-semibold text-[#55B985] hover:text-[#F7B955] transition"
+          >
+            Learn More →
+          </button>
+        </div>
+
+        <div
+          class="border border-[#E7ECE9] dark:border-[#333835] bg-[#F4F8F6] dark:bg-[#202322] rounded-3xl p-6 md:p-8 text-center transition-colors duration-300"
+        >
+          <h2
+            class="text-2xl md:text-3xl font-bold mt-4 text-[#1F4D3C] dark:text-[#A3D8B4]"
+          >
+            🍲 Food Distribution
+          </h2>
+          <p class="mt-2 text-[#24332D] dark:text-[#E0E4E2]">
+            Ensuring nutritious meals reach underserved communities.
+          </p>
+          <button
+            class="mt-6 font-semibold text-[#55B985] hover:text-[#F7B955] transition"
+          >
+            Learn More →
+          </button>
+        </div>
+
+        <div
+          class="border border-[#E7ECE9] dark:border-[#333835] bg-[#F4F8F6] dark:bg-[#202322] rounded-3xl p-6 md:p-8 text-center transition-colors duration-300"
+        >
+          <h2
+            class="text-2xl md:text-3xl font-bold mt-4 text-[#1F4D3C] dark:text-[#A3D8B4]"
+          >
+            🩺 Healthcare Support
+          </h2>
+          <p class="mt-2 text-[#24332D] dark:text-[#E0E4E2]">
+            Organizing health camps and spreading awareness.
+          </p>
+          <button
+            class="mt-6 font-semibold text-[#55B985] hover:text-[#F7B955] transition"
+          >
+            Learn More →
+          </button>
+        </div>
+
+        <div
+          class="border border-[#E7ECE9] dark:border-[#333835] bg-[#F4F8F6] dark:bg-[#202322] rounded-3xl p-6 md:p-8 text-center transition-colors duration-300"
+        >
+          <h2
+            class="text-2xl md:text-3xl font-bold mt-4 text-[#1F4D3C] dark:text-[#A3D8B4]"
+          >
+            👕 Clothing Donations
+          </h2>
+          <p class="mt-2 text-[#24332D] dark:text-[#E0E4E2]">
+            Providing essential clothing and winter necessities.
+          </p>
+          <button
+            class="mt-6 font-semibold text-[#55B985] hover:text-[#F7B955] transition"
+          >
+            Learn More →
+          </button>
+        </div>
+
+        <div
+          class="border border-[#E7ECE9] dark:border-[#333835] bg-[#F4F8F6] dark:bg-[#202322] rounded-3xl p-6 md:p-8 text-center transition-colors duration-300"
+        >
+          <h2
+            class="text-2xl md:text-3xl font-bold mt-4 text-[#1F4D3C] dark:text-[#A3D8B4]"
+          >
+            🌱 Community Development
+          </h2>
+          <p class="mt-2 text-[#24332D] dark:text-[#E0E4E2]">
+            Building sustainable initiatives that empower communities.
+          </p>
+          <button
+            class="mt-6 font-semibold text-[#55B985] hover:text-[#F7B955] transition"
+          >
+            Learn More →
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="About-us"
+      class="flex flex-col md:flex-row items-center min-h-screen py-12 md:py-20 px-6 md:px-12 text-center md:text-left"
+    >
+      <div
+        class="flex flex-1 items-center justify-center p-0 md:p-6 mb-8 md:mb-0"
+      >
+        <div class="relative w-full h-full max-w-[500px] md:max-w-none">
+          <img
+            src="img/images (1).jfif"
+            alt="Together"
+            class="rounded-3xl w-full h-full object-cover shadow-lg"
+          />
+        </div>
+      </div>
+
+      <div class="flex flex-col justify-center flex-1 p-0 md:p-6">
+        <div class="font-semibold text-[#55B985] mb-2">🌿 About NayePankh</div>
+        <h1
+          class="text-3xl md:text-4xl font-bold text-[#1F4D3C] dark:text-[#A3D8B4] heading"
+        >
+          Creating Opportunities, Inspiring Hope.
+        </h1>
+        <p class="pt-4 text-[#24332D] dark:text-[#E0E4E2] text-base md:text-lg">
+          NayePankh Foundation is committed to empowering children and
+          communities through education, healthcare, and sustainable initiatives
+          that create lasting social impact.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-6 mt-8">
+          <div
+            id="mission"
+            class="bg-[#FFFFFF] dark:bg-[#202322] border border-[#E7ECE9] dark:border-[#333835] rounded-3xl p-6 md:p-8 text-center shadow-sm hover:-translate-y-2 hover:shadow-md transition duration-300 flex-1"
+          >
+            <h1 class="font-bold text-xl text-[#1F4D3C] dark:text-[#A3D8B4]">
+              🎯 Mission
+            </h1>
+            <p class="mt-2 text-[#24332D] dark:text-[#E0E4E2]">
+              Empower communities through education, compassion, and collective
+              action.
+            </p>
+          </div>
+          <div
+            id="vision"
+            class="bg-[#FFFFFF] dark:bg-[#202322] border border-[#E7ECE9] dark:border-[#333835] rounded-3xl p-6 md:p-8 text-center shadow-sm hover:-translate-y-2 hover:shadow-md transition duration-300 flex-1"
+          >
+            <h1 class="font-bold text-xl text-[#1F4D3C] dark:text-[#A3D8B4]">
+              🌟 Vision
+            </h1>
+            <p class="mt-2 text-[#24332D] dark:text-[#E0E4E2]">
+              Build an inclusive society where every child has the opportunity
+              to dream, learn, and thrive.
+            </p>
+          </div>
+        </div>
+        <button
+          class="mt-8 mx-auto md:mx-0 font-semibold text-[#FFFFFF] bg-[#55B985] w-fit px-6 py-3 rounded-xl hover:bg-[#1F4D3C] dark:hover:bg-[#A3D8B4] dark:hover:text-[#181A1B] transition duration-200"
+        >
+          Know More →
+        </button>
+      </div>
+    </section>
+
+    <section
+      id="gallery"
+      class="py-12 md:py-16 bg-[#FFFFFF] dark:bg-[#181A1B] transition-colors duration-300"
+    >
+      <h1
+        class="text-3xl md:text-4xl font-bold text-[#1F4D3C] dark:text-[#A3D8B4] heading text-center"
+      >
+        Our Gallery
+      </h1>
+      <p
+        class="text-base md:text-lg font-semibold my-4 text-center px-4 text-[#24332D] dark:text-[#E0E4E2]"
+      >
+        Capturing moments of hope, compassion, and change through our community
+        initiatives.
+      </p>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6 md:px-12 mt-8"
+      >
+        <div class="relative">
+          <img
+            src="img/images (2).jfif"
+            alt="Gallery 1"
+            class="rounded-3xl w-full h-full object-cover shadow-md hover:scale-[1.03] transition duration-300"
+          />
+        </div>
+        <div class="relative">
+          <img
+            src="img/images (3).jfif"
+            alt="Gallery 2"
+            class="rounded-3xl w-full h-full object-cover shadow-md hover:scale-[1.03] transition duration-300"
+          />
+        </div>
+        <div class="relative">
+          <img
+            src="img/images (4).jfif"
+            alt="Gallery 3"
+            class="rounded-3xl w-full h-full object-cover shadow-md hover:scale-[1.03] transition duration-300"
+          />
+        </div>
+        <div class="relative">
+          <img
+            src="img/images (5).jfif"
+            alt="Gallery 4"
+            class="rounded-3xl w-full h-full object-cover shadow-md hover:scale-[1.03] transition duration-300"
+          />
+        </div>
+        <div class="relative">
+          <img
+            src="img/images (6).jfif"
+            alt="Gallery 5"
+            class="rounded-3xl w-full h-full object-cover shadow-md hover:scale-[1.03] transition duration-300"
+          />
+        </div>
+        <div class="relative">
+          <img
+            src="img/images (7).jfif"
+            alt="Gallery 6"
+            class="rounded-3xl w-full h-full object-cover shadow-md hover:scale-[1.03] transition duration-300"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="media" class="px-6 md:px-12 py-12 md:py-16">
+      <h1
+        class="text-3xl md:text-4xl font-bold text-[#1F4D3C] dark:text-[#A3D8B4] heading text-center"
+      >
+        Media Coverage
+      </h1>
+      <p
+        class="text-base md:text-lg font-semibold my-4 text-center px-4 text-[#24332D] dark:text-[#E0E4E2]"
+      >
+        Recognizing our efforts in education, community welfare, and social
+        initiatives through various media platforms.
+      </p>
+
+      <div
+        class="relative mt-8 max-w-4xl mx-auto border-4 border-[#FFFFFF] dark:border-[#202322] shadow-lg rounded-3xl overflow-hidden transition-colors duration-300"
+      >
+        <img
+          src="img/media.jpg"
+          alt="Media Coverage"
+          class="w-full h-full object-cover shadow-sm"
+        />
+      </div>
+
+      <p
+        class="text-base md:text-lg font-semibold mt-8 text-center px-4 text-[#24332D] dark:text-[#E0E4E2]"
+      >
+        Featured in leading regional newspapers for our contributions towards
+        education, humanitarian aid, and community development.
+      </p>
+    </section>
+
+    <section
+      id="involve"
+      class="px-6 md:px-12 py-12 md:py-16 bg-[#FFFFFF] dark:bg-[#181A1B] transition-colors duration-300"
+    >
+      <h1
+        class="text-3xl md:text-4xl font-bold text-[#1F4D3C] dark:text-[#A3D8B4] heading text-center"
+      >
+        Get Involved
+      </h1>
+      <p
+        class="text-base md:text-lg text-center mt-2 mb-10 text-[#24332D] dark:text-[#E0E4E2] px-4"
+      >
+        Be a part of our mission to create opportunities, spread hope, and
+        transform lives.
+      </p>
+
+      <div
+        id="card-holder"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
+      >
+        <div
+          class="bg-[#F4F8F6] dark:bg-[#202322] border border-[#E7ECE9] dark:border-[#333835] rounded-3xl p-6 md:p-8 text-center shadow-sm hover:-translate-y-2 hover:shadow-md transition duration-300"
+        >
+          <div class="text-3xl md:text-4xl text-[#55B985] font-bold">
+            💝 Donate
+          </div>
+          <p
+            class="text-base md:text-lg mt-4 text-[#24332D] dark:text-[#E0E4E2]"
+          >
+            Support our initiatives and help us reach more communities in need.
+          </p>
+          <button
+            class="mt-6 w-full sm:w-auto font-semibold bg-[#F7B955] text-[#FFFFFF] dark:text-[#181A1B] px-6 py-3 rounded-xl hover:bg-[#1F4D3C] dark:hover:bg-[#A3D8B4] transition"
+          >
+            Donate Now
+          </button>
+        </div>
+
+        <div
+          class="bg-[#F4F8F6] dark:bg-[#202322] border border-[#E7ECE9] dark:border-[#333835] rounded-3xl p-6 md:p-8 text-center shadow-sm hover:-translate-y-2 hover:shadow-md transition duration-300"
+        >
+          <div class="text-3xl md:text-4xl text-[#55B985] font-bold">
+            🤝 Volunteer
+          </div>
+          <p
+            class="text-base md:text-lg mt-4 text-[#24332D] dark:text-[#E0E4E2]"
+          >
+            Join our passionate team and contribute your time and skills.
+          </p>
+          <button
+            class="mt-6 w-full sm:w-auto font-semibold bg-[#55B985] text-[#FFFFFF] dark:text-[#181A1B] px-6 py-3 rounded-xl hover:bg-[#1F4D3C] dark:hover:bg-[#A3D8B4] transition"
+          >
+            Join Us
+          </button>
+        </div>
+
+        <div
+          class="bg-[#F4F8F6] dark:bg-[#202322] border border-[#E7ECE9] dark:border-[#333835] rounded-3xl p-6 md:p-8 text-center shadow-sm hover:-translate-y-2 hover:shadow-md transition duration-300"
+        >
+          <div class="text-3xl md:text-4xl text-[#55B985] font-bold">
+            💻 Intern
+          </div>
+          <p
+            class="text-base md:text-lg mt-4 text-[#24332D] dark:text-[#E0E4E2]"
+          >
+            Gain experience while making a meaningful social impact.
+          </p>
+          <button
+            class="mt-6 w-full sm:w-auto font-semibold border-2 border-[#55B985] text-[#55B985] px-6 py-3 rounded-xl hover:bg-[#55B985] hover:text-[#FFFFFF] dark:hover:text-[#181A1B] transition"
+          >
+            Apply Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="px-6 md:px-12 py-12 md:py-16">
+      <h1
+        class="text-3xl md:text-4xl font-bold text-[#1F4D3C] dark:text-[#A3D8B4] heading text-center"
+      >
+        Get In Touch
+      </h1>
+      <p
+        class="text-base md:text-lg text-center mt-2 mb-10 text-[#24332D] dark:text-[#E0E4E2] px-4"
+      >
+        Have questions or want to collaborate? We would love to hear from you.
+      </p>
+
+      <div
+        class="flex flex-col md:flex-row shadow-lg rounded-3xl overflow-hidden border border-[#E7ECE9] dark:border-[#333835] transition-colors duration-300"
+      >
+        <div
+          class="w-full md:w-1/2 bg-[#1F4D3C] dark:bg-[#0E211A] p-8 md:p-12 text-[#FFFFFF] dark:text-[#E0E4E2] flex flex-col justify-center gap-6 transition-colors duration-300"
+        >
+          <h2 class="text-xl md:text-2xl font-bold mb-2 md:mb-4 text-[#F7B955]">
+            Contact Information
+          </h2>
+          <p class="text-base md:text-lg flex items-center gap-3">
+            📍 Kanpur, Uttar Pradesh, India
+          </p>
+          <p class="text-base md:text-lg flex items-center gap-3 break-all">
+            📧 contact@nayepankh.com
+          </p>
+          <p class="text-base md:text-lg flex items-center gap-3">
+            📞 +91 XXXXX XXXXX
+          </p>
+        </div>
+
+        <div
+          class="w-full md:w-1/2 bg-[#FFFFFF] dark:bg-[#202322] p-8 md:p-12 transition-colors duration-300"
+        >
+          <form action="/submit-form" class="flex flex-col gap-4">
+            <div>
+              <label
+                class="block font-semibold text-[#1F4D3C] dark:text-[#A3D8B4] mb-1"
+                >Name:</label
+              >
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter Your name"
+                class="w-full bg-[#F4F8F6] dark:bg-[#181A1B] border border-[#E7ECE9] dark:border-[#333835] rounded-lg p-3 text-[#24332D] dark:text-[#E0E4E2] focus:outline-none focus:border-[#55B985] dark:focus:border-[#55B985] transition-colors duration-300"
+              />
+            </div>
+            <div>
+              <label
+                class="block font-semibold text-[#1F4D3C] dark:text-[#A3D8B4] mb-1"
+                >Email:</label
+              >
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter Your Email"
+                class="w-full bg-[#F4F8F6] dark:bg-[#181A1B] border border-[#E7ECE9] dark:border-[#333835] rounded-lg p-3 text-[#24332D] dark:text-[#E0E4E2] focus:outline-none focus:border-[#55B985] dark:focus:border-[#55B985] transition-colors duration-300"
+              />
+            </div>
+            <div>
+              <label
+                class="block font-semibold text-[#1F4D3C] dark:text-[#A3D8B4] mb-1"
+                >Message:</label
+              >
+              <textarea
+                id="msg"
+                rows="4"
+                placeholder="Provide your message"
+                class="w-full bg-[#F4F8F6] dark:bg-[#181A1B] border border-[#E7ECE9] dark:border-[#333835] rounded-lg p-3 text-[#24332D] dark:text-[#E0E4E2] focus:outline-none focus:border-[#55B985] dark:focus:border-[#55B985] transition-colors duration-300"
+              ></textarea>
+            </div>
+            <button
+              class="bg-[#55B985] text-[#FFFFFF] dark:text-[#181A1B] font-semibold py-3 px-6 rounded-xl mt-4 hover:bg-[#1F4D3C] dark:hover:bg-[#A3D8B4] transition duration-200"
+            >
+              Send Message ->
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="bg-[#FFFFFF] dark:bg-[#202322] border-t-2 border-[#E7ECE9] dark:border-[#333835] mt-12 py-8 md:py-12 px-6 md:px-12 text-center flex flex-col items-center gap-4 transition-colors duration-300"
+    >
+      <h3
+        class="text-2xl md:text-3xl font-bold text-[#1F4D3C] dark:text-[#A3D8B4] heading"
+      >
+        NayePankh Foundation
+      </h3>
+      <p
+        class="text-[#24332D] dark:text-[#E0E4E2] font-medium text-sm md:text-base"
+      >
+        Giving Wings to Dreams, Transforming Lives.
+      </p>
+
+      <div class="flex gap-6 mt-4 font-semibold text-lg md:text-base">
+        <a
+          href="https://www.instagram.com/nayepankhfoundation/"
+          class="text-[#55B985] hover:text-[#F7B955] transition"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/nayepankhfoundation"
+          class="text-[#55B985] hover:text-[#F7B955] transition"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/company/nayepankh"
+          class="text-[#55B985] hover:text-[#F7B955] transition"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/@nayepankhfoundation"
+          class="text-[#55B985] hover:text-[#F7B955] transition"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+        <a
+          href="https://x.com/nayepankh"
+          class="text-[#55B985] hover:text-[#F7B955] transition"
+          ><i class="fa-brands fa-x-twitter"></i
+        ></a>
+      </div>
+
+      <h3
+        class="mt-6 md:mt-8 text-xs md:text-sm text-[#24332D] dark:text-[#E0E4E2]"
+      >
+        © 2026 NayePankh Foundation. All Rights Reserved.
+      </h3>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
