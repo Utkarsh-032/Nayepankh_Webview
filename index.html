@@ -7,12 +7,13 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
     <title>Nayepankh - A dream standing for all</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        darkMode: "class",
-      };
-    </script>
+
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+      @custom-variant dark (&:where(.dark, .dark *));
+    </style>
+
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -21,10 +22,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+
     <style>
       body {
         font-family: "Inter", sans-serif;
-        -webkit-text-size-adjust: 100%; /* Prevents iOS text zoom */
+        -webkit-text-size-adjust: 100%;
       }
       .heading {
         font-family: "Cormorant Garamond", serif;
@@ -89,6 +91,7 @@
         </button>
       </div>
     </nav>
+
     <div
       id="mobile-menu"
       class="hidden fixed top-24 md:top-32 left-0 w-full bg-[#FFFFFF] shadow-lg z-40 border-b border-[#E7ECE9] dark:bg-[#181A1B] dark:border-[#333835] transition-colors duration-300"
@@ -206,7 +209,6 @@
           </h2>
           <p class="mt-2 text-[#24332D] dark:text-[#E0E4E2]">Lives Impacted</p>
         </div>
-
         <div
           class="bg-[#FFFFFF] dark:bg-[#202322] border border-[#E7ECE9] dark:border-[#333835] rounded-3xl p-6 md:p-8 text-center shadow-sm hover:-translate-y-2 hover:shadow-md transition duration-300"
         >
@@ -218,7 +220,6 @@
           </h2>
           <p class="mt-2 text-[#24332D] dark:text-[#E0E4E2]">Volunteers</p>
         </div>
-
         <div
           class="bg-[#FFFFFF] dark:bg-[#202322] border border-[#E7ECE9] dark:border-[#333835] rounded-3xl p-6 md:p-8 text-center shadow-sm hover:-translate-y-2 hover:shadow-md transition duration-300"
         >
@@ -232,7 +233,6 @@
             Community Initiatives
           </p>
         </div>
-
         <div
           class="bg-[#FFFFFF] dark:bg-[#202322] border border-[#E7ECE9] dark:border-[#333835] rounded-3xl p-6 md:p-8 text-center shadow-sm hover:-translate-y-2 hover:shadow-md transition duration-300"
         >
@@ -284,7 +284,6 @@
             Learn More →
           </button>
         </div>
-
         <div
           class="border border-[#E7ECE9] dark:border-[#333835] bg-[#F4F8F6] dark:bg-[#202322] rounded-3xl p-6 md:p-8 text-center transition-colors duration-300"
         >
@@ -302,7 +301,6 @@
             Learn More →
           </button>
         </div>
-
         <div
           class="border border-[#E7ECE9] dark:border-[#333835] bg-[#F4F8F6] dark:bg-[#202322] rounded-3xl p-6 md:p-8 text-center transition-colors duration-300"
         >
@@ -320,7 +318,6 @@
             Learn More →
           </button>
         </div>
-
         <div
           class="border border-[#E7ECE9] dark:border-[#333835] bg-[#F4F8F6] dark:bg-[#202322] rounded-3xl p-6 md:p-8 text-center transition-colors duration-300"
         >
@@ -338,7 +335,6 @@
             Learn More →
           </button>
         </div>
-
         <div
           class="border border-[#E7ECE9] dark:border-[#333835] bg-[#F4F8F6] dark:bg-[#202322] rounded-3xl p-6 md:p-8 text-center transition-colors duration-300"
         >
@@ -376,7 +372,6 @@
           />
         </div>
       </div>
-
       <div class="flex flex-col justify-center flex-1 p-0 md:p-6 w-full">
         <div class="font-semibold text-[#55B985] mb-2">🌿 About NayePankh</div>
         <h1
@@ -389,7 +384,6 @@
           communities through education, healthcare, and sustainable initiatives
           that create lasting social impact.
         </p>
-
         <div class="flex flex-col sm:flex-row gap-6 mt-8">
           <div
             id="mission"
@@ -499,7 +493,6 @@
         Recognizing our efforts in education, community welfare, and social
         initiatives through various media platforms.
       </p>
-
       <div
         class="relative mt-8 w-full max-w-4xl mx-auto border-4 border-[#FFFFFF] dark:border-[#202322] shadow-lg rounded-3xl overflow-hidden transition-colors duration-300"
       >
@@ -509,7 +502,6 @@
           class="w-full h-auto object-cover shadow-sm"
         />
       </div>
-
       <p
         class="text-base md:text-lg font-semibold mt-8 text-center px-4 text-[#24332D] dark:text-[#E0E4E2]"
       >
@@ -533,7 +525,6 @@
         Be a part of our mission to create opportunities, spread hope, and
         transform lives.
       </p>
-
       <div
         id="card-holder"
         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
@@ -555,7 +546,6 @@
             Donate Now
           </button>
         </div>
-
         <div
           class="bg-[#F4F8F6] dark:bg-[#202322] border border-[#E7ECE9] dark:border-[#333835] rounded-3xl p-6 md:p-8 text-center shadow-sm hover:-translate-y-2 hover:shadow-md transition duration-300"
         >
@@ -573,7 +563,6 @@
             Join Us
           </button>
         </div>
-
         <div
           class="bg-[#F4F8F6] dark:bg-[#202322] border border-[#E7ECE9] dark:border-[#333835] rounded-3xl p-6 md:p-8 text-center shadow-sm hover:-translate-y-2 hover:shadow-md transition duration-300"
         >
@@ -605,7 +594,6 @@
       >
         Have questions or want to collaborate? We would love to hear from you.
       </p>
-
       <div
         class="flex flex-col md:flex-row shadow-lg rounded-3xl overflow-hidden border border-[#E7ECE9] dark:border-[#333835] transition-colors duration-300"
       >
@@ -622,10 +610,9 @@
             📧 contact@nayepankh.com
           </p>
           <p class="text-base md:text-lg flex items-center gap-3">
-            📞 +91 XXXXX XXXXX
+            📞 +91 8318500748
           </p>
         </div>
-
         <div
           class="w-full md:w-1/2 bg-[#FFFFFF] dark:bg-[#202322] p-8 md:p-12 transition-colors duration-300"
         >
@@ -689,7 +676,6 @@
       >
         Giving Wings to Dreams, Transforming Lives.
       </p>
-
       <div class="flex gap-6 mt-4 font-semibold text-lg md:text-base">
         <a
           href="https://www.instagram.com/nayepankhfoundation/"
@@ -717,13 +703,13 @@
           ><i class="fa-brands fa-x-twitter"></i
         ></a>
       </div>
-
       <h3
         class="mt-6 md:mt-8 text-xs md:text-sm text-[#24332D] dark:text-[#E0E4E2]"
       >
         © 2026 NayePankh Foundation. All Rights Reserved.
       </h3>
     </footer>
+
     <script src="app.js"></script>
   </body>
 </html>
